@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineMania</title>
+    <link rel="stylesheet" href="estilo4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="img/flaticon.png" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineManía</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>CineMania</h1><br>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html"><i class="fa-solid fa-clapperboard"></i>INICIO</a></li>
+                <li><a href="index4.html" class="active" ><i class="fa-solid fa-user"></i> CONTACTO</a></li>
+                <li><a href="index1.html"><i class="fa-solid fa-pen-fancy" ></i> BLOG</a></li>
+                <li><a href="index2.html"><i class="fa-solid fa-photo-film"></i>GALERIA</a></li>
+                <li><a href="index3.html"><i class="fa-solid fa-video"></i>VIDEOS</a></li>
+                <li><a href="index5.html"><i class="fa-solid fa-location-dot"></i> NOSOTROS</a></li>
+                <li><a href="index6.html" ><i class="fa-solid fa-newspaper"></i> NOTICIAS</a></li>
+            </ul>
+        </nav>
+
+
+    </header>
+    <main>
+        <article>
+            <table class="tabla-uno" border="0">
+                <tr>
+                    <th colspan="2" class="titulored">Información de Contacto</th>
+                </tr>
+                <tr>
+                    <td><strong>Dirección:</strong></td>
+                    <td>Av. Nicolás de Piérola 412, Lima 15001</td>
+                </tr>
+                <tr>
+                    <td><strong>Teléfonos:</strong></td>
+                    <td>51 902 345 476 | 908 456 789</td>
+                </tr>
+                <tr>
+                    <td><strong>Email:</strong></td>
+                    <td>cinemania@gmail.com</td>
+                </tr>
+            </table>
+            
+            <table class="tabla-dos" border="0">
+                <tr>
+                    <th colspan="2" class="titulored">Horario de Atención</th>
+                </tr>
+                <tr>
+                    <td> <strong>Área de ventas:</strong></td>
+                    <td>Lunes a Viernes de 8am a 6pm</td>
+                </tr>
+            </table>
+            <div id="imagenno">
+                <img src="img/nosotrosimg.jpg" alt="">
+            </div>
+
+        </article>
+        <section class="form-container">
+            <h2 class="titulored">Escríbenos</h2>
+            <form action="tu-script.php" method="post">
+                <div class="form-group">
+                    <label for="nombres">Nombres:<span class="required">*</span></label>
+                    <input type="text" id="nombres" name="nombres" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="celular">Celular:<span class="required">*</span></label>
+                    <input type="tel" id="celular" name="celular" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico:<span class="required">*</span></label>
+                    <input type="email" id="correo" name="correo" required title="Por favor, ingresa un correo electrónico válido.">
+                </div>
+                
+                <div class="form-group">
+                    <label for="ruc">RUC:</label>
+                    <input type="text" id="ruc" name="ruc">
+                </div>
+        
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Detalla tu requerimento a continuación tal como punto de inico y fin, tipo de unidad,# de personas a trasladar,fecha y horario del servicio." required></textarea>
+                </div>
+                
+            
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <section id="mapa">
+        
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.9293198167093!2d-77.04245722509758!3d-12.048384088188497!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c9d7516206db%3A0x58f10c1b8f97fd2b!2sCine%20Club%20CCFV!5e0!3m2!1ses!2spe!4v1731550943127!5m2!1ses!2spe" width="800" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        </section>
+    </main>
+    <footer>
+        
+        <div id="redes">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <audio autoplay loop>
+        <source src="audio/fox.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+</body>
+</html>

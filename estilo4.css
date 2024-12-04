@@ -1,0 +1,240 @@
+*{
+padding: 0;
+margin:0;
+}
+:root {
+    --color1: #fde9e1; /* Fondo del header */
+    --color2: #a05c32; /* Texto principal */
+    --color3: #4a2103; /* Texto activo y enlaces al pasar el mouse */
+    --color4: #ed9a64; /* Fondo del menú al pasar el mouse */
+    --color5: #f2c6c6; /* Fondo del footer */
+    --color6: #ffffff; /* Texto de enlaces */
+    --color7: #000000; /* Texto de enlaces al pasar el mouse */
+    --color8: #ffcc00; /* Íconos de redes sociales */
+    --color9: #007bff; /* Fondo de botones */
+    --color10: #ffffff; /* Texto de botones */
+}
+header {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+     
+    padding: 20px;
+    
+     
+}
+header h1{
+    font-size: 90px;
+    font-family: "Roboto", serif;
+}
+.menu {
+    display: flex; 
+    justify-content: center; 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    font-family: "Roboto", serif;
+    
+}
+.menu li a {
+    font-size: 14px; 
+    background-color: transparent; 
+    padding: 10px; 
+    transition: background-color 0.3s, color 0.3s; 
+ 
+    color: var(--color2); /* Color del texto */
+    position: relative;
+    border-radius: 15px;
+}
+.menu li a:hover {
+    background-color: var(--color4); 
+    color: var(--color3); 
+    
+}
+
+.menu li {
+    margin: 0 15px; 
+}
+
+
+.menu li a.active {
+    color:var(--color2) ; 
+    text-decoration: underline;
+    
+}
+.menu li a i {
+    margin-right: 5px; 
+}
+
+body{
+    background: linear-gradient(to right, #fad6c8, #fff0e5);
+}
+main {
+    margin: 0 auto; 
+    padding: 0px; 
+    max-width: 800px; /* Ancho máximo */
+    
+     
+    font-family: "Roboto", serif;
+    
+
+}
+
+main{
+    display:grid;
+    grid-template-areas: 
+            "uno dos" 
+            "tres tres";
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(400px, auto);
+    gap:10px;
+    
+    
+    
+}
+/* Asignación de las áreas */
+article{
+    grid-area: uno;
+    
+}
+.form-container{
+    grid-area: dos;
+}
+#mapa{
+    grid-area: tres;
+    height: 100%; /* Asegura que ocupe toda la altura del grid */
+    width: 100%; 
+    
+}
+/*tablas*/
+.tabla-uno,
+.tabla-dos {
+    border-collapse: collapse; 
+    width: 100%; 
+}
+
+/* Eliminamos el borde en las celdas de las cabeceras (th) */
+.tabla-uno th,
+.tabla-dos th {
+    border: none; 
+    padding: 10px;
+    text-align: center; 
+    
+  
+}
+
+/* Mantener el borde en las celdas de datos (td) */
+.tabla-uno td,
+.tabla-dos td {
+    border: 3px solid #fffffe; 
+    padding: 10px; 
+    text-align: left; 
+}
+
+.tabla-dos {
+    position: relative;
+    top: 50px; /* Ajusta según lo necesario */
+}
+.titulored{
+    color: var(--color3);
+    font-size: 23px;
+}
+/*imagen*/
+#imagenno{
+    padding-top: 70px;
+    text-align: center;
+}
+#imagenno img{
+    width: 300px;
+    
+}
+/*formulario*/
+.form-group {
+    margin-bottom: 20px; 
+}
+.form-container form {
+    width: 350px; 
+    max-width: 720px; 
+    margin: 0 auto; 
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px; 
+    font-size: 16px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+.form-group textarea {
+    height: 150px; 
+}
+button {
+    width: 100%; /* Ocupa todo el ancho del formulario */
+    background-color: var(--color3); /* Color de fondo gris */
+    color: white; /* Color del texto */
+    padding: 12px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 4px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    font-size: 18px; /* Tamaño de la fuente */
+}
+button:hover {
+    background-color: var(--color2); 
+}
+label {
+    display: block; 
+    margin-bottom: 5px; 
+}
+footer {
+    margin: 0 auto; 
+    padding: 0px; 
+    max-width: 800px; 
+    
+    text-align: center; 
+    font-family: "Roboto", serif;
+    font-size: 10px;
+}
+
+ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 20px 0; 
+    display: flex; 
+}
+
+.menu, #redes ul {
+    justify-content: space-around; 
+}
+
+#redes ul {
+    justify-content: center; 
+}
+
+li {
+    margin: 0 10px; 
+}
+
+a {
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold; 
+    font-size: 24px;
+}
+
+.menu a:hover {
+    color: #000000; 
+}
+#redes a {
+    color: rgb(255, 255, 255); /* Color de los íconos (negro) */
+    font-size: 10px; /* Tamaño de los íconos */
+    text-decoration: none; /* Sin subrayado */
+    background: rgb(0, 0, 0); /* Fondo blanco */
+    border-radius: 50%; /* Hacerlo circular */
+    padding: 10px; /* Espaciado interno para el tamaño del círculo */
+    transition: background 0.3s, color 0.3s; /* Transición suave para el hover */
+}
+
+#redes a:hover {
+    background: #d57a1e; 
+    color: white; /* Cambiar el color del ícono al blanco */
+}

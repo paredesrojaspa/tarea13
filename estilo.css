@@ -1,0 +1,91 @@
+:root {
+    --color1: #fde9e1; /* Fondo del header */
+    --color2: #a05c32; /* Texto principal */
+    --color3: #4a2103; /* Texto activo y enlaces al pasar el mouse */
+    --color4: #ed9a64; /* Fondo del menú al pasar el mouse */
+    --color5: #f2c6c6; /* Fondo del footer */
+    --color6: #ffffff; /* Texto de enlaces */
+    --color7: #000000; /* Texto de enlaces al pasar el mouse */
+    --color8: #ffcc00; /* Íconos de redes sociales */
+    --color9: #007bff; /* Fondo de botones */
+    --color10: #ffffff; /* Texto de botones */
+}
+nav{
+
+    z-index: 100;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+nav,img{
+    position: fixed;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 20px 0; 
+    display: flex; 
+}
+
+.menu, #redes ul {
+    justify-content: space-around; 
+}
+
+#redes ul {
+    justify-content: center; 
+}
+
+li {
+    margin: 0 10px; 
+}
+
+a {
+    color: white; 
+    text-decoration: none; 
+    font-weight: bold; 
+    font-size: 24px; 
+}
+
+.menu a:hover {
+    color: var(--color7); 
+}
+#redes a {
+    color: black; 
+    font-size: 20px; 
+    text-decoration: none; 
+    background: white; 
+    border-radius: 50%; 
+    padding: 10px; 
+    transition: background 0.3s, color 0.3s; /* Transición suave para el hover */
+}
+
+#redes a:hover {
+    background: #d57a1e; 
+    color: white; /* Cambiar el color del ícono al blanco */
+}
+h1, h2 {
+    text-align: center; 
+}
+h1{
+    font-size: 80px;
+    color: var(--color6);
+    margin: 0;
+    font-family: "Roboto", serif;
+}
+h2{
+    font-size: 12px;
+    color: var(--color6);
+    font-family: "Roboto", serif;
+    font-style: italic;
+}
+.menu a{
+    font-size: 20px;
+    font-family: "Roboto", serif;
+}

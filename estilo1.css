@@ -1,0 +1,198 @@
+*{
+padding: 0;
+margin:0;
+}
+:root {
+    --color1: #fde9e1; /* Fondo del header */
+    --color2: #a05c32; /* Texto principal */
+    --color3: #4a2103; /* Texto activo y enlaces al pasar el mouse */
+    --color4: #ed9a64; /* Fondo del menú al pasar el mouse */
+    --color5: #f2c6c6; /* Fondo del footer */
+    --color6: #ffffff; /* Texto de enlaces */
+    --color7: #000000; /* Texto de enlaces al pasar el mouse */
+    --color8: #ffcc00; /* Íconos de redes sociales */
+    --color9: #007bff; /* Fondo de botones */
+    --color10: #ffffff; /* Texto de botones */
+}
+header {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    background-color: var(--color1); 
+    padding: 20px;
+    
+     
+}
+header h1{
+    font-size: 90px;
+    font-family: "Roboto", serif;
+}
+.menu {
+    display: flex; 
+    justify-content: center; 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    font-family: "Roboto", serif;
+    
+}
+.menu li a {
+    font-size: 14px; 
+    background-color: transparent; 
+    padding: 10px; 
+    transition: background-color 0.3s, color 0.3s; 
+ 
+    color: var(--color2); /* Color del texto */
+    position: relative;
+    border-radius: 15px;
+}
+.menu li a:hover {
+    background-color: var(--color4); 
+    color: var(--color3); 
+    
+}
+
+.menu li {
+    margin: 0 15px; 
+}
+
+
+.menu li a.active {
+    color:var(--color2) ; 
+    text-decoration: underline;
+    
+}
+.menu li a i {
+    margin-right: 5px; 
+}
+#imagen {
+    text-align: center; 
+    margin: 0; 
+}
+
+#imagen img {
+    max-width: 100%; 
+    height: auto; 
+    width: 100%; 
+}
+
+main {
+    margin: 0 auto; 
+    padding: 0px; 
+    max-width: 800px; /* Ancho máximo */
+    
+    background-color: var(--color1); 
+    font-family: "Roboto", serif;
+
+}
+
+#tituloautor {
+    display: flex; 
+    align-items: center;
+    margin: 20px 0; 
+    position: relative; 
+}
+
+#tituloautor h1 {
+    flex: 1; 
+    text-align: center; 
+    margin: 0; 
+    font-family: "Roboto", serif;
+    font-style: italic;
+}
+
+#imagenautor {
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-end; 
+    position: absolute; 
+    right: 0; 
+    top: 0; 
+}
+
+#imagenautor img {
+    max-width: 55px; 
+    height: auto; 
+    border-radius: 50%; 
+}
+
+#imagenautor h3 {
+    margin-top: 5px; 
+    text-align: center; 
+    font-size: 8px;
+}
+#texto1,#texto2,#texto3{
+    text-align: justify;
+    padding: 8px;
+    
+}
+.texto-con-imagen {
+    display: flex;
+    align-items: flex-start; 
+    margin: 20px 0; 
+}
+
+.texto-con-imagen img {
+    max-width: 218px; 
+    height: auto; 
+    margin-right: 10px; 
+}
+footer {
+    margin: 0 auto; 
+    padding: 0px; 
+    max-width: 800px; 
+    background-color: var(--color1); 
+    text-align: center; 
+    font-family: "Roboto", serif;
+    font-size: 10px;
+}
+footer h3 {
+    text-align: left; 
+    margin: 0 0 10px;
+}
+ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 20px 0; 
+    display: flex; 
+}
+
+.menu, #redes ul {
+    justify-content: space-around; 
+}
+
+#redes ul {
+    justify-content: center; 
+}
+
+li {
+    margin: 0 10px; 
+}
+
+a {
+    color: var(--color6); 
+    text-decoration: none; 
+    font-weight: bold; 
+    font-size: 24px; 
+}
+
+.menu a:hover {
+    color: var(--color7) 
+}
+#redes a {
+    color: #ffffff; 
+    font-size: 20px; 
+    text-decoration: none; 
+    background: rgb(0, 0, 0); 
+    border-radius: 50%; 
+    padding: 10px;
+    transition: background 0.3s, color 0.3s; 
+}
+
+#redes a:hover {
+    background: #d57a1e; 
+    color: white;
+}
+body{
+    background-color: var(--color1);
+}
